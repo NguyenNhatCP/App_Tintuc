@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_5"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/card_corner_radius">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_card"
+                style="@style/TitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                tools:text="Tên bài viết" />
+
+            <RelativeLayout
+                android:id="@+id/itemRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_8"
+                android:layout_marginTop="@dimen/layout_margin_4">
+
+                <TextView
+                    android:id="@+id/section_card"
+                    style="@style/SectionTextViewStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/image_card"
+                    tools:text="chuyên mục" />
+
+                <TextView
+                    android:id="@+id/des_text_card"
+                    style="@style/TrailTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/section_card"
+                    android:layout_toStartOf="@+id/image_card"
+                    tools:text="Mô tả" />
+
+                <ImageView
+                    android:id="@+id/image_card"
+                    android:layout_width="@dimen/thumbnail_image_width"
+                    android:layout_height="@dimen/thumbnail_image_height"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/date_card"
+                    style="@style/DateTextViewStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/btnFavorite"
+                    tools:text="ngày đăng" />
+                <ToggleButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="@dimen/image_share"
+                    android:layout_height="@dimen/image_share"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/layout_margin"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/ic_favorite_border"/>
+                <ProgressBar
+                    android:id="@+id/progressbar_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

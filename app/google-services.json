@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "99998857689",
+    "firebase_url": "https://appnewsforandroid.firebaseio.com",
+    "project_id": "appnewsforandroid",
+    "storage_bucket": "appnewsforandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99998857689:android:3ef851c35e531b3ccfc1c8",
+        "android_client_info": {
+          "package_name": "com.example.appnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99998857689-9e48ktuvevihef3dkiomohfp4is83rdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appnews",
+            "certificate_hash": "431214e45c4d9f4b876be773072f7b5558a3a74c"
+          }
+        },
+        {
+          "client_id": "99998857689-kg3iipefthibnrrqenkrbit6j3ndvmop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmyc9SqFNDuopLgV1m5VWHka_cYlMizos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99998857689-kg3iipefthibnrrqenkrbit6j3ndvmop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

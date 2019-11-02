@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_url_word">https://vnexpress.net/rss/the-gioi.rss</string>
+    <string name="common_url_entertainment">https://vnexpress.net/rss/giai-tri.rss</string>
+    <string name="common_url_balance">https://vnexpress.net/rss/phap-luat.rss</string>
+    <string name="common_url_business">https://vnexpress.net/rss/kinh-doanh.rss</string>
+    <string name="common_url_education">https://vnexpress.net/rss/giao-duc.rss</string>
+    <string name="common_url_sport">https://vnexpress.net/rss/the-thao.rss</string>
+    <string name="common_url_technology">https://vnexpress.net/rss/khoa-hoc.rss</string>
+    <string name="common_url_social">https://vnexpress.net/rss/gia-dinh.rss</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_word"
+            android:icon="@drawable/ic_action_worldwide"
+            android:title="@string/ic_title_WORLD" />
+         <item
+             android:id="@+id/nav_entertainment"
+             android:icon="@drawable/ic_entertainment"
+             android:title="@string/ic_title_ENTERTAINMENT" />
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_action_balance"
+            android:title="@string/ic_title_BALANCE" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/ic_action_fluctuation"
+            android:title="@string/ic_title_BUSINESS" />
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/ic_action_books_stack_of_three"
+            android:title="@string/ic_title_EDUCATION" />
+        <item
+            android:id="@+id/nav_sport"
+            android:icon="@drawable/ic_action_football"
+            android:title="@string/ic_title_SPORT" />
+        <item
+            android:id="@+id/nav_technology"
+            android:icon="@drawable/ic_action_smartphone"
+            android:title="@string/ic_title_TECHNOLOGY" />
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_action_public"
+            android:title="@string/ic_title_SOCIAL" />
+    </group>
+</menu>
