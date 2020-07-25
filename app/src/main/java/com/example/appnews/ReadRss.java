@@ -42,7 +42,7 @@ public class ReadRss extends AsyncTask<Void, Void, Void> {
         this.recyclerView = recyclerView;
         this.address = address;
         progressDialog = new ProgressDialog(context);
-        progressDialog.setMessage("Đang tải...");
+        progressDialog.setMessage("Loading...");
     }
 
     //before fetching of rss statrs show progress to user
@@ -117,7 +117,7 @@ public class ReadRss extends AsyncTask<Void, Void, Void> {
                 }
                 link = item.getElementsByTagName("link").item(0).getTextContent();
                 feedItem.setLink(link);
-                Pattern p = Pattern.compile("(http(s?):)([/|.|\\w|\\s|-])*\\.(?:jpg|gif|png)");
+                Pattern p = Pattern.compile("\\b(https?:\\/\\/\\S+(?:png|jpe?g|gif)\\S*)\\b");
                 Matcher matcher = p.matcher(content);
                 if (matcher.find()) {
                     String img = matcher.group();
